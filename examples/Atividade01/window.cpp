@@ -95,19 +95,19 @@ void Window::onPaintUI() {
     }
 
     // Window begin
-    ImGui::Begin("Movimente o triângulo através das barras:");
+    ImGui::Begin("Movimente o triângulo através dos sliders:");
 
     // Static text
     ImGui::Text(
-        "Você pode alterar o tamanho, rotação e translação do triângulo.");
+        "Você pode alterar o rotação, translação e tamanho do triângulo.");
     ImGui::Text(
         "A cor de background pode ser alterada conforme sua preferência");
 
     // Sliders for manipulation of the new properties
-    ImGui::SliderFloat("Tamanho", &m_scale, 0.0f, 4.0f);
     ImGui::SliderFloat("Rotação", &m_rotation, 0.0f, 2 * 3.1415f);
     ImGui::SliderFloat("Translação eixo X", &m_translation.x, 0.0f, 1.0f);
     ImGui::SliderFloat("Translação eixo Y", &m_translation.y, 0.0f, 1.0f);
+    ImGui::SliderFloat("Tamanho", &m_scale, 0.0f, 4.0f);
 
     // Edit background color
     ImGui::ColorEdit3("Background", &m_clearColor.r);

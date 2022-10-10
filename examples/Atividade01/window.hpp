@@ -14,7 +14,7 @@ protected:
 private:
   GLuint m_vao{};
   GLuint m_vboVertices{};
-  GLuint m_vboColors{};
+  // GLuint m_vboColors{};
   GLuint m_program{};
 
   glm::ivec2 m_viewportSize{};
